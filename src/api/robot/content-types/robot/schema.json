@@ -1,0 +1,330 @@
+{
+    "kind": "collectionType",
+    "collectionName": "robots",
+    "info": {
+        "singularName": "robot",
+        "pluralName": "robots",
+        "displayName": "Robot",
+        "description": "Robot detail page data"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "short_neutral_summary": {
+            "type": "text",
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "market_status": {
+            "type": "enumeration",
+            "enum": [
+                "prototype",
+                "beta",
+                "limited_real_world",
+                "consumer_ready"
+            ],
+            "required": true,
+            "default": "prototype",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "availability_status": {
+            "type": "enumeration",
+            "enum": [
+                "not_available",
+                "preorder",
+                "pilot",
+                "available"
+            ],
+            "required": true,
+            "default": "not_available",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "regions": {
+            "type": "enumeration",
+            "enum": [
+                "PL",
+                "EU",
+                "US",
+                "other"
+            ],
+            "multiple": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "review_status": {
+            "type": "enumeration",
+            "enum": [
+                "draft",
+                "needs_review",
+                "approved",
+                "blocked"
+            ],
+            "required": true,
+            "default": "draft",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "blocked_reason": {
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "last_technical_review_at": {
+            "type": "datetime",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "hero_image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ],
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "gallery": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": [
+                "images",
+                "videos"
+            ],
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "media_disclaimer": {
+            "type": "enumeration",
+            "enum": [
+                "render",
+                "demo",
+                "real_photo",
+                "mixed"
+            ],
+            "default": "mixed",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "manufacturer": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::manufacturer.manufacturer",
+            "inversedBy": "robots",
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "sources": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::source.source",
+            "inversedBy": "robots",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "claims": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::claim.claim",
+            "mappedBy": "robot",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "related_robots": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::robot.robot",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "intended_use": {
+            "type": "component",
+            "repeatable": false,
+            "component": "robot.intended-use",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "capabilities": {
+            "type": "component",
+            "repeatable": true,
+            "component": "robot.capability-item",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "limitations": {
+            "type": "component",
+            "repeatable": true,
+            "component": "robot.limitation-item",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "autonomy_and_control": {
+            "type": "component",
+            "repeatable": false,
+            "component": "robot.autonomy",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "safety": {
+            "type": "component",
+            "repeatable": false,
+            "component": "robot.safety",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "environment_requirements": {
+            "type": "component",
+            "repeatable": false,
+            "component": "robot.environment",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "specs_public": {
+            "type": "component",
+            "repeatable": false,
+            "component": "robot.specs",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "faq": {
+            "type": "component",
+            "repeatable": true,
+            "component": "robot.faq-item",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "expert_summary": {
+            "type": "component",
+            "repeatable": false,
+            "component": "robot.expert-summary",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "key_terms": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.term",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "classification": {
+            "type": "component",
+            "repeatable": false,
+            "component": "robot.classification",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "notes_internal": {
+            "type": "richtext",
+            "private": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        }
+    }
+}

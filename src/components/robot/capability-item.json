@@ -1,0 +1,52 @@
+{
+    "collectionName": "components_robot_capability_items",
+    "info": {
+        "displayName": "Capability Item",
+        "description": "Capability as presentation layer linked to claims"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "category": {
+            "type": "enumeration",
+            "enum": [
+                "locomotion",
+                "manipulation",
+                "perception",
+                "hri",
+                "autonomy",
+                "other"
+            ],
+            "required": true
+        },
+        "summary": {
+            "type": "text",
+            "required": true
+        },
+        "conditions": {
+            "type": "text",
+            "required": true
+        },
+        "risk_level": {
+            "type": "enumeration",
+            "enum": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "default": "medium"
+        },
+        "claims": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::claim.claim"
+        },
+        "notes_internal": {
+            "type": "text",
+            "private": true
+        }
+    }
+}

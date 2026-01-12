@@ -1,0 +1,32 @@
+{
+    "collectionName": "components_robot_expert_summaries",
+    "info": {
+        "displayName": "Expert Summary",
+        "description": "Cold, factual expert summary for consumers"
+    },
+    "options": {},
+    "attributes": {
+        "who_is_it_for": {
+            "type": "text"
+        },
+        "who_is_it_not_for": {
+            "type": "text"
+        },
+        "top_risks": {
+            "type": "json"
+        },
+        "recommendation_level": {
+            "type": "enumeration",
+            "enum": [
+                "watch_only",
+                "early_adopter",
+                "practical_consumer",
+                "not_recommended"
+            ],
+            "default": "watch_only"
+        },
+        "final_note": {
+            "type": "text"
+        }
+    }
+}

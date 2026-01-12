@@ -1,0 +1,34 @@
+{
+    "collectionName": "components_robot_intended_uses",
+    "info": {
+        "displayName": "Intended Use",
+        "description": "Declared use cases and context"
+    },
+    "options": {},
+    "attributes": {
+        "declared_applications": {
+            "type": "json"
+        },
+        "environment_type": {
+            "type": "enumeration",
+            "enum": [
+                "apartment",
+                "house",
+                "controlled_space"
+            ],
+            "multiple": true
+        },
+        "target_user": {
+            "type": "enumeration",
+            "enum": [
+                "family",
+                "enthusiast",
+                "caregiver"
+            ],
+            "multiple": true
+        },
+        "notes": {
+            "type": "richtext"
+        }
+    }
+}

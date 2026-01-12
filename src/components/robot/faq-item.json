@@ -1,0 +1,38 @@
+{
+    "collectionName": "components_robot_faq_items",
+    "info": {
+        "displayName": "FAQ Item",
+        "description": "FAQ linked to claims (no separate evidence duplication)"
+    },
+    "options": {},
+    "attributes": {
+        "question": {
+            "type": "string",
+            "required": true
+        },
+        "answer_short": {
+            "type": "text",
+            "required": true
+        },
+        "answer_conditions": {
+            "type": "text"
+        },
+        "answer_not_possible": {
+            "type": "text"
+        },
+        "confidence": {
+            "type": "enumeration",
+            "enum": [
+                "high",
+                "medium",
+                "low"
+            ],
+            "default": "medium"
+        },
+        "claims": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::claim.claim"
+        }
+    }
+}

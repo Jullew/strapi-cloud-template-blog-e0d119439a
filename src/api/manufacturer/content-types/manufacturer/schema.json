@@ -1,0 +1,54 @@
+{
+    "kind": "collectionType",
+    "collectionName": "manufacturers",
+    "info": {
+        "singularName": "manufacturer",
+        "pluralName": "manufacturers",
+        "displayName": "Manufacturer",
+        "description": "Robot manufacturer"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": false
+        }
+    },
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true,
+            "unique": true
+        },
+        "country": {
+            "type": "string"
+        },
+        "website_url": {
+            "type": "url"
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "notes_internal": {
+            "type": "richtext",
+            "private": true
+        },
+        "robots": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::robot.robot",
+            "mappedBy": "manufacturer"
+        }
+    }
+}

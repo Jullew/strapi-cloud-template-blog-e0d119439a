@@ -1,0 +1,52 @@
+{
+    "collectionName": "components_robot_specs",
+    "info": {
+        "displayName": "Public Specs",
+        "description": "Only publicly known specs; null = unknown"
+    },
+    "options": {},
+    "attributes": {
+        "height_cm": {
+            "type": "decimal"
+        },
+        "weight_kg": {
+            "type": "decimal"
+        },
+        "payload_kg": {
+            "type": "decimal"
+        },
+        "runtime_min": {
+            "type": "integer"
+        },
+        "charging_time_min": {
+            "type": "integer"
+        },
+        "sensors_public": {
+            "type": "json"
+        },
+        "power": {
+            "type": "string"
+        },
+        "sdk_api": {
+            "type": "enumeration",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "data_completeness": {
+            "type": "enumeration",
+            "enum": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "default": "low"
+        },
+        "notes": {
+            "type": "richtext"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "collectionName": "components_robot_autonomies",
+    "info": {
+        "displayName": "Autonomy & Control",
+        "description": "Control modes and dependencies"
+    },
+    "options": {},
+    "attributes": {
+        "control_modes": {
+            "type": "enumeration",
+            "enum": [
+                "manual",
+                "teleop",
+                "semi_autonomous",
+                "autonomous"
+            ],
+            "multiple": true
+        },
+        "cloud_dependency": {
+            "type": "enumeration",
+            "enum": [
+                "none",
+                "partial",
+                "required",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "internet_required": {
+            "type": "enumeration",
+            "enum": [
+                "no",
+                "sometimes",
+                "yes",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "operator_required": {
+            "type": "enumeration",
+            "enum": [
+                "no",
+                "sometimes",
+                "yes",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "notes": {
+            "type": "richtext"
+        }
+    }
+}

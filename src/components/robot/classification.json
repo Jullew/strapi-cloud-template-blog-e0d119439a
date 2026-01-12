@@ -1,0 +1,60 @@
+{
+    "collectionName": "components_robot_classifications",
+    "info": {
+        "displayName": "Robot Classification",
+        "description": "Canonical comparison fields for filters and comparisons (no JSON)"
+    },
+    "options": {},
+    "attributes": {
+        "locomotion_type": {
+            "type": "enumeration",
+            "enum": [
+                "bipedal",
+                "wheeled",
+                "hybrid",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "manipulation_level": {
+            "type": "enumeration",
+            "enum": [
+                "none",
+                "basic_grasp",
+                "dexterous",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "autonomy_level": {
+            "type": "enumeration",
+            "enum": [
+                "manual",
+                "teleop",
+                "semi",
+                "autonomous",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "cloud_dependency": {
+            "type": "enumeration",
+            "enum": [
+                "none",
+                "partial",
+                "required",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "sdk_api": {
+            "type": "enumeration",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "default": "unknown"
+        }
+    }
+}

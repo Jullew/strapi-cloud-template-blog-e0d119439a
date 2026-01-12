@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_robot_environments",
+    "info": {
+        "displayName": "Environment Requirements",
+        "description": "Real-world constraints: space, floor, lighting, connectivity"
+    },
+    "options": {},
+    "attributes": {
+        "space_requirements": {
+            "type": "text"
+        },
+        "lighting_constraints": {
+            "type": "text"
+        },
+        "floor_constraints": {
+            "type": "text"
+        },
+        "connectivity": {
+            "type": "text"
+        },
+        "setup_requirements": {
+            "type": "text"
+        }
+    }
+}

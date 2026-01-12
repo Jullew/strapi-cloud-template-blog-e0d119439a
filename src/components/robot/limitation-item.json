@@ -1,0 +1,31 @@
+{
+    "collectionName": "components_robot_limitation_items",
+    "info": {
+        "displayName": "Limitation Item",
+        "description": "Mandatory limitation/constraints section"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "limitation_type": {
+            "type": "enumeration",
+            "enum": [
+                "cannot_do",
+                "unstable",
+                "environment_sensitive",
+                "requires_supervision"
+            ],
+            "required": true
+        },
+        "description": {
+            "type": "text",
+            "required": true
+        },
+        "why_it_matters": {
+            "type": "text"
+        }
+    }
+}

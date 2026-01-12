@@ -1,0 +1,46 @@
+{
+    "collectionName": "components_robot_safeties",
+    "info": {
+        "displayName": "Safety",
+        "description": "Safety mechanisms and known risks"
+    },
+    "options": {},
+    "attributes": {
+        "emergency_stop": {
+            "type": "enumeration",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "collision_detection": {
+            "type": "enumeration",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "safe_near_children": {
+            "type": "enumeration",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "default": "unknown"
+        },
+        "certifications": {
+            "type": "json"
+        },
+        "known_risks": {
+            "type": "json"
+        },
+        "notes": {
+            "type": "richtext"
+        }
+    }
+}

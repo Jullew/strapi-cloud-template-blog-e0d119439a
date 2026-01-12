@@ -1,0 +1,92 @@
+{
+    "kind": "collectionType",
+    "collectionName": "sources",
+    "info": {
+        "singularName": "source",
+        "pluralName": "sources",
+        "displayName": "Source",
+        "description": "Evidence / references for robots and claims"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": false
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "official_doc",
+                "spec_sheet",
+                "official_video",
+                "conference_talk",
+                "press_release",
+                "engineering_paper",
+                "independent_test"
+            ],
+            "required": true
+        },
+        "publisher": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string",
+            "required": true
+        },
+        "published_at": {
+            "type": "datetime"
+        },
+        "retrieved_at": {
+            "type": "datetime",
+            "required": false
+        },
+        "access": {
+            "type": "enumeration",
+            "enum": [
+                "public",
+                "registration",
+                "paywalled",
+                "internal"
+            ],
+            "default": "public"
+        },
+        "is_official": {
+            "type": "boolean",
+            "default": false
+        },
+        "evidence_quality": {
+            "type": "enumeration",
+            "enum": [
+                "A_official_spec",
+                "B_official_demo",
+                "C_third_party_test",
+                "D_marketing_claim"
+            ]
+        },
+        "quote_or_timestamp": {
+            "type": "string"
+        },
+        "notes": {
+            "type": "richtext"
+        },
+        "robots": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::robot.robot",
+            "mappedBy": "sources"
+        },
+        "claims": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::claim.claim",
+            "mappedBy": "evidence"
+        }
+    }
+}

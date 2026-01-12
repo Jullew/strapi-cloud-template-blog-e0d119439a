@@ -1,0 +1,94 @@
+{
+    "kind": "collectionType",
+    "collectionName": "claims",
+    "info": {
+        "singularName": "claim",
+        "pluralName": "claims",
+        "displayName": "Claim",
+        "description": "Single technical claim (source of truth) with evidence"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "claim_text": {
+            "type": "text",
+            "required": true
+        },
+        "category": {
+            "type": "enumeration",
+            "enum": [
+                "locomotion",
+                "manipulation",
+                "perception",
+                "hri",
+                "autonomy",
+                "safety",
+                "power",
+                "other"
+            ],
+            "required": true
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": [
+                "verified",
+                "needs_clarification",
+                "false_or_misleading"
+            ],
+            "required": true,
+            "default": "needs_clarification"
+        },
+        "conditions": {
+            "type": "text"
+        },
+        "not_in_scope": {
+            "type": "text"
+        },
+        "risk_notes": {
+            "type": "text"
+        },
+        "maturity": {
+            "type": "enumeration",
+            "enum": [
+                "prototype",
+                "limited_real_world",
+                "consumer_ready"
+            ],
+            "required": true,
+            "default": "prototype"
+        },
+        "confidence": {
+            "type": "enumeration",
+            "enum": [
+                "high",
+                "medium",
+                "low"
+            ],
+            "required": true,
+            "default": "medium"
+        },
+        "robot": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::robot.robot",
+            "inversedBy": "claims",
+            "required": true
+        },
+        "evidence": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::source.source",
+            "inversedBy": "claims"
+        }
+    }
+}
