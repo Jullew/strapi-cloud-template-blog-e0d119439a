@@ -31,7 +31,7 @@
             "type": "string"
         },
         "website_url": {
-            "type": "url"
+            "type": "string"
         },
         "logo": {
             "type": "media",
