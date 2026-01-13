@@ -6,10 +6,30 @@
     },
     "options": {},
     "attributes": {
+        "form_factor": {
+            "type": "enumeration",
+            "enum": [
+                "humanoid_biped",
+                "quadruped",
+                "wheeled",
+                "other"
+            ]
+        },
+        "primary_domain": {
+            "type": "enumeration",
+            "enum": [
+                "home",
+                "industrial",
+                "service",
+                "medical",
+                "research"
+            ]
+        },
         "locomotion_type": {
             "type": "enumeration",
             "enum": [
                 "bipedal",
+                "biped_walking",
                 "wheeled",
                 "hybrid",
                 "unknown"
@@ -22,6 +42,7 @@
                 "none",
                 "basic_grasp",
                 "dexterous",
+                "two_hands_dexterous",
                 "unknown"
             ],
             "default": "unknown"
@@ -33,6 +54,7 @@
                 "teleop",
                 "semi",
                 "autonomous",
+                "home_autonomy_with_human_assist",
                 "unknown"
             ],
             "default": "unknown"

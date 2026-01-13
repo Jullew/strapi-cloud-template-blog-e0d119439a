@@ -27,6 +27,54 @@
         "power": {
             "type": "string"
         },
+        "lift_kg": {
+            "type": "decimal"
+        },
+        "carry_kg": {
+            "type": "decimal"
+        },
+        "arm_payload_kg": {
+            "type": "decimal"
+        },
+        "battery_wh": {
+            "type": "integer"
+        },
+        "runtime_hours": {
+            "type": "decimal"
+        },
+        "noise_db": {
+            "type": "integer"
+        },
+        "ip_body": {
+            "type": "string"
+        },
+        "ip_hands": {
+            "type": "string"
+        },
+        "compute_chipset": {
+            "type": "string"
+        },
+        "compute_ai_tflops_fp4": {
+            "type": "integer"
+        },
+        "camera": {
+            "type": "string"
+        },
+        "microphones": {
+            "type": "string"
+        },
+        "speakers": {
+            "type": "string"
+        },
+        "comms": {
+            "type": "json"
+        },
+        "dof": {
+            "type": "json"
+        },
+        "speeds": {
+            "type": "json"
+        },
         "sdk_api": {
             "type": "enumeration",
             "enum": [

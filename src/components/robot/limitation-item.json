@@ -7,8 +7,7 @@
     "options": {},
     "attributes": {
         "title": {
-            "type": "string",
-            "required": true
+            "type": "string"
         },
         "limitation_type": {
             "type": "enumeration",
@@ -16,7 +15,8 @@
                 "cannot_do",
                 "unstable",
                 "environment_sensitive",
-                "requires_supervision"
+                "requires_supervision",
+                "not_fully_autonomous_for_all_tasks"
             ],
             "required": true
         },

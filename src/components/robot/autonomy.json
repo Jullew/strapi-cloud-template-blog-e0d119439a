@@ -12,7 +12,11 @@
                 "manual",
                 "teleop",
                 "semi_autonomous",
-                "autonomous"
+                "autonomous",
+                "voice",
+                "app",
+                "scheduled_tasks",
+                "expert_guided"
             ],
             "multiple": true
         },

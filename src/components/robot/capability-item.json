@@ -18,6 +18,7 @@
                 "perception",
                 "hri",
                 "autonomy",
+                "interaction",
                 "other"
             ],
             "required": true
