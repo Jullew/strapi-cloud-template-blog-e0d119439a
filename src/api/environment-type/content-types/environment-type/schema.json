@@ -1,0 +1,26 @@
+{
+    "kind": "collectionType",
+    "collectionName": "environment_types",
+    "info": {
+        "singularName": "environment-type",
+        "pluralName": "environment-types",
+        "displayName": "Environment Type",
+        "description": "Dictionary for environment types"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "code": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        }
+    }
+}

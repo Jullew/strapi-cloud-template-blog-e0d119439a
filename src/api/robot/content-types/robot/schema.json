@@ -77,14 +77,10 @@
             }
         },
         "regions": {
-            "type": "enumeration",
-            "enum": [
-                "PL",
-                "EU",
-                "US",
-                "other"
-            ],
-            "multiple": true,
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::region.region",
+            "inversedBy": "robots",
             "pluginOptions": {
                 "i18n": {
                     "localized": false

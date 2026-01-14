@@ -16,24 +16,14 @@
             "type": "text"
         },
         "environment_type": {
-            "type": "enumeration",
-            "enum": [
-                "apartment",
-                "house",
-                "controlled_space",
-                "indoor_home"
-            ],
-            "multiple": true
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::environment-type.environment-type"
         },
         "target_user": {
-            "type": "enumeration",
-            "enum": [
-                "family",
-                "enthusiast",
-                "caregiver",
-                "consumer_home_owner"
-            ],
-            "multiple": true
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::target-user.target-user"
         },
         "notes": {
             "type": "richtext"

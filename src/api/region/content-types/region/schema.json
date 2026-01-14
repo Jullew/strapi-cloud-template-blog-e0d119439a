@@ -1,0 +1,32 @@
+{
+    "kind": "collectionType",
+    "collectionName": "regions",
+    "info": {
+        "singularName": "region",
+        "pluralName": "regions",
+        "displayName": "Region",
+        "description": "Dictionary for geographic regions"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "code": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        },
+        "robots": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::robot.robot",
+            "mappedBy": "regions"
+        }
+    }
+}

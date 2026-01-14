@@ -1,0 +1,26 @@
+{
+    "kind": "collectionType",
+    "collectionName": "target_users",
+    "info": {
+        "singularName": "target-user",
+        "pluralName": "target-users",
+        "displayName": "Target User",
+        "description": "Dictionary for target users"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "code": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        }
+    }
+}
