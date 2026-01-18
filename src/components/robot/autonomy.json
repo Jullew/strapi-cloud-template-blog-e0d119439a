@@ -7,18 +7,7 @@
     "options": {},
     "attributes": {
         "control_modes": {
-            "type": "enumeration",
-            "enum": [
-                "manual",
-                "teleop",
-                "semi_autonomous",
-                "autonomous",
-                "voice",
-                "app",
-                "scheduled_tasks",
-                "expert_guided"
-            ],
-            "multiple": true
+            "type": "json"
         },
         "cloud_dependency": {
             "type": "enumeration",

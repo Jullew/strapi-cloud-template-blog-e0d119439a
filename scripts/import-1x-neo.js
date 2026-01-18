@@ -128,7 +128,8 @@ async function main() {
             // resolve endpoint first
             const endpoint = await determineEndpoint(collection);
 
-            let entry = await findFirst(collection, { code });
+            // Search by name since code is a UID field auto-generated from name
+            let entry = await findFirst(collection, { name: code });
             if (!entry) {
                 console.log(`Creating ${collection}: ${code}`);
                 entry = await fetchAPI(`/${endpoint}`, 'POST', {
@@ -138,6 +139,7 @@ async function main() {
             }
             return entry;
         };
+
 
         const regionIds = [];
         if (robotData.regions) {
