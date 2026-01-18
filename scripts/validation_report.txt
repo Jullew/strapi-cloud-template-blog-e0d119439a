@@ -1,0 +1,2 @@
+--- Validation Report ---
+--- Validating 1x-neo.json against local schemas ---

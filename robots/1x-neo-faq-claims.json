@@ -1,0 +1,65 @@
+{
+    "claims_mapping_for_robot_components": {
+        "capabilities": [
+            {
+                "title_match": "„Chores”: lista zadań, harmonogram i zadania na żądanie",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-chores-feature",
+                    "claim-neo-scheduled-expert-mode"
+                ]
+            },
+            {
+                "title_match": "Scheduled Expert Mode (człowiek w pętli)",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-scheduled-expert-mode"
+                ]
+            },
+            {
+                "title_match": "Zdalne sterowanie (aplikacja mobilna + VR)",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-remote-control"
+                ]
+            },
+            {
+                "title_match": "Self-Charge (samodzielne podłączanie do ładowania)",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-self-charge",
+                    "claim-neo-battery-842wh-runtime-4h",
+                    "claim-neo-quick-charge-6min-per-hour"
+                ]
+            },
+            {
+                "title_match": "Manipulacja dwuręczna (22 DoF na dłoń) i parametry przenoszenia",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-dof-hands",
+                    "claim-neo-lift",
+                    "claim-neo-carry",
+                    "claim-neo-arm-payload"
+                ]
+            }
+        ],
+        "faq": [
+            {
+                "question_match": "Czy NEO jest w pełni autonomiczny?",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-chores-feature",
+                    "claim-neo-scheduled-expert-mode"
+                ]
+            },
+            {
+                "question_match": "Kiedy ruszają dostawy?",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-us-deliveries-2026"
+                ]
+            },
+            {
+                "question_match": "Jak szybki jest NEO?",
+                "connect_claims_by_slug_internal": [
+                    "claim-neo-speed-walk",
+                    "claim-neo-speed-run",
+                    "claim-neo-speed-hands"
+                ]
+            }
+        ]
+    }
+}

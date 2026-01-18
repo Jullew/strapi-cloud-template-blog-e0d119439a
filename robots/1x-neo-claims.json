@@ -1,0 +1,306 @@
+{
+    "claims_to_create": [
+        {
+            "title": "Dostawy w USA startują w 2026 roku",
+            "claim_text": "Producent podaje, że dostawy robota NEO w USA startują w 2026 roku.",
+            "category": "other",
+            "status": "verified",
+            "conditions": "Deklaracja producenta dotycząca harmonogramu dostaw (może ulec zmianie).",
+            "not_in_scope": "Nie dotyczy dostępności w UE/PL ani realnych terminów dla konkretnych klientów.",
+            "risk_notes": "Ryzyko opóźnień typowe dla produktów w przedsprzedaży.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo",
+                    "1x-neo-home-robot-order-today"
+                ]
+            },
+            "slug_internal": "claim-neo-us-deliveries-2026"
+        },
+        {
+            "title": "Scheduled Expert Mode: zdalny ekspert 1X może nadzorować zadania nieznane",
+            "claim_text": "Producent deklaruje tryb Scheduled Expert Mode: dla zadań, których robot „nie zna”, ekspert 1X może zdalnie nadzorować działania robota w zaplanowanych godzinach.",
+            "category": "autonomy",
+            "status": "verified",
+            "conditions": "Wymaga usługi po stronie 1X oraz łączności; dotyczy zadań określanych przez producenta jako „nieznane/skomplikowane”.",
+            "not_in_scope": "Nie przesądza o poziomie prywatności, procedurach dostępu, logowaniu zdarzeń ani o tym, jak często tryb będzie potrzebny.",
+            "risk_notes": "Ryzyko prywatności i zależność od zewnętrznej usługi; ryzyko błędów operacyjnych (człowiek w pętli).",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-scheduled-expert-mode"
+        },
+        {
+            "title": "Zdalne sterowanie: aplikacja mobilna i urządzenie VR",
+            "claim_text": "Producent deklaruje możliwość zdalnego sterowania robotem NEO przez aplikację mobilną oraz urządzenie VR.",
+            "category": "hri",
+            "status": "verified",
+            "conditions": "W praktyce wymaga łączności i jest wrażliwe na opóźnienia sieci.",
+            "not_in_scope": "Nie przesądza o opóźnieniach, zasięgu, wymaganiach sieciowych ani o jakości sterowania w realnych domach.",
+            "risk_notes": "Ryzyko prywatności i niezamierzonego działania przy problemach z siecią.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-remote-control"
+        },
+        {
+            "title": "Self-Charge: robot sam podłącza się do ładowania",
+            "claim_text": "Producent deklaruje funkcję Self-Charge: gdy robot NEO potrzebuje ładowania, sam podłącza się do zasilania.",
+            "category": "autonomy",
+            "status": "verified",
+            "conditions": "Wymaga przygotowanego miejsca ładowania i drożnego dojazdu; skuteczność zależy od środowiska.",
+            "not_in_scope": "Nie przesądza o niezawodności w mieszkaniach z bałaganem, dywanikami, wąskimi przejściami itp.",
+            "risk_notes": "Ryzyko nieudanego dokowania/utknięcia; potencjalne ryzyko potknięcia o kabel w domu.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-self-charge"
+        },
+        {
+            "title": "Prędkość chodu: 1,4 m/s",
+            "claim_text": "Producent podaje prędkość chodu robota NEO jako 1,4 m/s.",
+            "category": "locomotion",
+            "status": "verified",
+            "conditions": "Wartość deklarowana przez producenta; brak publicznej metodologii testu (np. nawierzchnia, obciążenie, tryb).",
+            "not_in_scope": "Nie przesądza o stabilności na dywanach, śliskich podłogach, progach ani o zachowaniu w zatłoczonych przestrzeniach.",
+            "risk_notes": "Użytkownicy mogą mylić „prędkość” z bezpieczną prędkością w domu; realnie może być niższa w ciasnych warunkach.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-speed-walk"
+        },
+        {
+            "title": "Maksymalna prędkość biegu: 6,2 m/s",
+            "claim_text": "Producent podaje maksymalną prędkość biegu robota NEO jako 6,2 m/s.",
+            "category": "locomotion",
+            "status": "verified",
+            "conditions": "Wartość deklarowana przez producenta; brak publicznej metodologii (nawierzchnia, tryb, bezpieczeństwo).",
+            "not_in_scope": "Nie oznacza, że robot będzie bezpiecznie biegać w typowym domu ani że takie użycie jest zalecane.",
+            "risk_notes": "Wysokie ryzyko bezpieczeństwa przy ruchu z dużą prędkością w środowisku domowym.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-speed-run"
+        },
+        {
+            "title": "„Hands: 8,0 m/s” (metryka nieopisana)",
+            "claim_text": "Producent podaje „Hands: 8,0 m/s”, ale nie opisuje publicznie metodologii ani tego, czego dokładnie dotyczy ta prędkość.",
+            "category": "manipulation",
+            "status": "needs_clarification",
+            "conditions": "Brak publicznej definicji metryki (np. czy dotyczy końcówki palców, nadgarstka, jakiego ruchu i z jakim obciążeniem).",
+            "not_in_scope": "Nie można na tej podstawie wnioskować o realnej szybkości manipulacji obiektami w domu.",
+            "risk_notes": "Łatwo o nadinterpretację marketingową; ryzyko błędnych porównań między robotami.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-speed-hands"
+        },
+        {
+            "title": "Dłonie: 22 stopnie swobody na dłoń (22x2)",
+            "claim_text": "Producent podaje, że robot NEO ma 22 stopnie swobody na dłoń (łącznie 44 DoF dla obu dłoni).",
+            "category": "manipulation",
+            "status": "verified",
+            "conditions": "To opis kinematyki (DoF), nie gwarancja zręczności w konkretnych zadaniach.",
+            "not_in_scope": "Nie przesądza o sile chwytu, precyzji, kontroli siły ani o skuteczności chwytania trudnych obiektów.",
+            "risk_notes": "DoF bywa mylone z „umiejętnościami” — umiejętności zależą od sterowania i percepcji.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-dof-hands"
+        },
+        {
+            "title": "Parametr lift: 154 lbs",
+            "claim_text": "Producent podaje parametr lift: 154 lbs.",
+            "category": "manipulation",
+            "status": "verified",
+            "conditions": "Deklaracja producenta; brak publicznej metodologii (punkt przyłożenia, pozycja robota, czas utrzymania).",
+            "not_in_scope": "Nie oznacza bezpiecznego podnoszenia dowolnych obiektów w domu ani że robot zrobi to w każdej pozycji.",
+            "risk_notes": "Ryzyko błędnych oczekiwań (np. podnoszenie ciężkich, nieporęcznych obiektów w ciasnych warunkach).",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-lift"
+        },
+        {
+            "title": "Parametr carry: 55 lbs",
+            "claim_text": "Producent podaje parametr carry: 55 lbs.",
+            "category": "manipulation",
+            "status": "verified",
+            "conditions": "Deklaracja producenta; brak publicznej metodologii (odległość przenoszenia, prędkość, stabilność).",
+            "not_in_scope": "Nie oznacza, że robot będzie bezpiecznie przenosić każdy obiekt o tej masie w realnym domu.",
+            "risk_notes": "Wysoka masa obiektu może zwiększać ryzyko upadku/kolizji.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-carry"
+        },
+        {
+            "title": "Arm payload: 18 lbs",
+            "claim_text": "Producent podaje parametr arm payload: 18 lbs.",
+            "category": "manipulation",
+            "status": "verified",
+            "conditions": "Deklaracja producenta; brak publicznych szczegółów testu (wysięg, pozycja, dynamika).",
+            "not_in_scope": "Nie przesądza o udźwigu na wyciągniętych rękach, w ruchu ani o chwytaniu obiektów o nietypowym kształcie.",
+            "risk_notes": "Ryzyko nadinterpretacji — realna użyteczność zależy od chwytu i sterowania.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-arm-payload"
+        },
+        {
+            "title": "Bateria: 842 Wh i czas pracy: 4 godziny",
+            "claim_text": "Producent podaje pojemność baterii 842 Wh oraz czas pracy 4 godziny.",
+            "category": "power",
+            "status": "verified",
+            "conditions": "Deklaracja producenta; realny czas pracy zależy od obciążenia, prędkości i typu zadań.",
+            "not_in_scope": "Nie przesądza o czasie pracy przy ciężkiej manipulacji ani o degradacji baterii w czasie.",
+            "risk_notes": "Użytkownicy mogą oczekiwać 4h przy każdym scenariuszu, co zwykle nie jest realne.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-battery-842wh-runtime-4h"
+        },
+        {
+            "title": "Szybkie ładowanie: 6 minut na 1 godzinę pracy",
+            "claim_text": "Producent podaje, że szybkie ładowanie odpowiada 6 minutom ładowania na 1 godzinę czasu pracy.",
+            "category": "power",
+            "status": "verified",
+            "conditions": "Deklaracja producenta; brak danych o czasie pełnego ładowania i warunkach testu.",
+            "not_in_scope": "Nie oznacza, że w 6 minut da się zawsze odzyskać „dokładnie” 1h pracy przy dowolnym obciążeniu.",
+            "risk_notes": "Potencjalne rozbieżności między scenariuszami; ryzyko błędnego planowania pracy robota.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-quick-charge-6min-per-hour"
+        },
+        {
+            "title": "Stopień ochrony: korpus IP44, dłonie IP68",
+            "claim_text": "Producent podaje stopień ochrony: korpus IP44 (odporność na zachlapanie) oraz dłonie IP68 (możliwość zanurzenia).",
+            "category": "safety",
+            "status": "verified",
+            "conditions": "Dotyczy odpowiednio korpusu i dłoni; nie oznacza pełnej wodoodporności całego robota.",
+            "not_in_scope": "Nie dotyczy pracy w deszczu na zewnątrz ani mycia całego robota wodą.",
+            "risk_notes": "Ryzyko błędnej interpretacji jako „wodoodporny robot” — to może prowadzić do uszkodzeń.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-order-neo"
+                ]
+            },
+            "slug_internal": "claim-neo-ip-body-ip44-hands-ip68"
+        },
+        {
+            "title": "Funkcja „Chores”: lista zadań, harmonogram i przykłady zastosowań",
+            "claim_text": "Producent opisuje funkcję „Chores”: użytkownik tworzy listę prac domowych i harmonogram oraz może zlecać zadania na bieżąco; jako przykłady podaje m.in. składanie prania, porządkowanie półek i ogarnianie przestrzeni. Dla zadań nieznanych wskazuje możliwość zaplanowania wsparcia eksperta 1X.",
+            "category": "autonomy",
+            "status": "verified",
+            "conditions": "Zakres realnej skuteczności zależy od aktualnego oprogramowania oraz od środowiska domowego.",
+            "not_in_scope": "Nie jest to gwarancja, że robot wykona te zadania w każdym domu i w każdych warunkach.",
+            "risk_notes": "Ryzyko rozjazdu między demonstracją a codziennym działaniem w trudnym środowisku (bałagan, małe przejścia, różne obiekty).",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "1x-neo"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "1x-neo-home-robot-order-today"
+                ]
+            },
+            "slug_internal": "claim-neo-chores-feature"
+        }
+    ],
+    "uwaga_techniczna": "Pole slug_internal nie istnieje w schemacie claim — jest tu tylko do mapowania importu. W Strapi możesz to trzymać jako tymczasowe mapowanie w skrypcie seedującym."
+}
