@@ -20,6 +20,11 @@
             "type": "string",
             "required": true
         },
+        "slug": {
+            "type": "uid",
+            "targetField": "title",
+            "required": true
+        },
         "type": {
             "type": "enumeration",
             "enum": [
@@ -29,7 +34,10 @@
                 "conference_talk",
                 "press_release",
                 "engineering_paper",
-                "independent_test"
+                "independent_test",
+                "official_product_page",
+                "news",
+                "analysis"
             ],
             "required": true
         },
@@ -66,6 +74,7 @@
             "enum": [
                 "A_official_spec",
                 "B_official_demo",
+                "B_expert_review",
                 "C_third_party_test",
                 "D_marketing_claim"
             ]

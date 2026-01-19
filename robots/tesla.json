@@ -1,0 +1,266 @@
+{
+    "locale": "pl",
+    "name": "Tesla Optimus",
+    "slug": "tesla-optimus",
+    "short_neutral_summary": "Tesla Optimus to rozwijany przez Teslę humanoidalny robot dwunożny do wykonywania zadań „niebezpiecznych, powtarzalnych lub nudnych”. Publicznie podawane parametry (np. wzrost, masa, udźwig, prędkość marszu, pojemność baterii) pochodzą głównie z deklaracji Tesli i wypowiedzi Elona Muska w kontekście pokazów (AI Day) i nie są obecnie jednolicie potwierdzone jako specyfikacja produktu dostępnego komercyjnie. Według relacji medialnych część prezentacji w ostatnich latach nie była w pełni autonomiczna i wykorzystywała zdalnych operatorów.",
+    "market_status": "limited_real_world",
+    "availability_status": "not_available",
+    "regions": [
+        "US"
+    ],
+    "review_status": "needs_review",
+    "blocked_reason": null,
+    "last_technical_review_at": null,
+    "hero_image": null,
+    "gallery": [],
+    "media_disclaimer": "demo",
+    "manufacturer": {
+        "lookup": {
+            "name": "Tesla"
+        }
+    },
+    "sources": {
+        "connect_by_slug": [
+            "tesla-ai-robotics",
+            "latimes-tesla-ai-day-2022-optimus",
+            "cleantechnica-optimus-specs-2022",
+            "forbes-optimus-specs-battery-2022",
+            "ieee-spectrum-robotics-experts-optimus",
+            "businessinsider-optimus-teleop-2025"
+        ]
+    },
+    "related_robots": [],
+    "key_terms": [],
+    "classification": {
+        "form_factor": "humanoid_biped",
+        "primary_domain": "industrial",
+        "locomotion_type": "biped_walking",
+        "manipulation_level": "dexterous",
+        "autonomy_level": "teleop",
+        "cloud_dependency": "unknown",
+        "sdk_api": "unknown"
+    },
+    "specs_public": {
+        "height_cm": 173,
+        "weight_kg": 57,
+        "payload_kg": 20,
+        "runtime_min": null,
+        "charging_time_min": null,
+        "sensors_public": {
+            "notes": [
+                "Tesla opisuje rozwój stosu percepcji i planowania dla robota dwunożnego, ale na stronie Tesla AI & Robotics nie publikuje pełnej listy sensorów ani ich parametrów.",
+                "W materiałach prasowych pojawiają się opisy oparcia o wizję komputerową, jednak liczba i typ kamer/sensorów nie mają tu jednej, oficjalnej tabeli specyfikacji."
+            ]
+        },
+        "power": "Zasilanie bateryjne (deklarowane 2,3 kWh w materiałach z okresu AI Day 2022).",
+        "lift_kg": 68,
+        "carry_kg": 20,
+        "arm_payload_kg": null,
+        "battery_wh": 2300,
+        "runtime_hours": null,
+        "noise_db": null,
+        "ip_body": null,
+        "ip_hands": null,
+        "compute_chipset": "Brak publicznej, stabilnej specyfikacji układu obliczeniowego w oficjalnej tabeli produktu; Tesla komunikuje prace nad stosami AI dla percepcji, planowania i sterowania.",
+        "compute_ai_tflops_fp4": null,
+        "camera": "Brak jednej, oficjalnej specyfikacji kamery/kamer w tabeli produktu.",
+        "microphones": null,
+        "speakers": null,
+        "comms": null,
+        "dof": {
+            "notes": [
+                "Publicznie pojawiają się informacje o rozwoju dłoni (np. 11 DoF w Gen 2 oraz docelowo więcej), ale brak jednej, oficjalnej i aktualnej tabeli DoF dla całego robota."
+            ]
+        },
+        "speeds": {
+            "walking_speed_m_s": 2.24,
+            "notes": [
+                "Wartość 2,24 m/s odpowiada deklarowanemu celowi „5 mph” dla marszu; brak publicznej metodologii i warunków pomiaru."
+            ]
+        },
+        "sdk_api": "unknown",
+        "data_completeness": "medium",
+        "notes": "<p>Wartości liczbowe (wzrost/masa/udźwig/prędkość/bateria) pochodzą z deklaracji Tesli i relacji z AI Day (2021–2022) oraz późniejszych omówień. Tesla nie prowadzi publicznej „karty katalogowej” z pełną specyfikacją produkcyjną Optimusa. Z tego powodu część parametrów należy traktować jako cele/założenia, a nie gwarantowaną specyfikację produktu rynkowego.</p>"
+    },
+    "intended_use": {
+        "declared_applications": [
+            {
+                "name": "Zadania niebezpieczne, powtarzalne lub nudne",
+                "examples": [
+                    "prace pomocnicze w środowisku przemysłowym (koncepcja)",
+                    "proste czynności logistyczne lub manipulacyjne (koncepcja)"
+                ]
+            }
+        ],
+        "high_level_summary": "Robot humanoidalny rozwijany przez Teslę jako platforma ogólnego przeznaczenia do zadań niebezpiecznych/powtarzalnych/nudnych.",
+        "key_constraints": "Brak publicznej, stabilnej specyfikacji produkcyjnej oraz brak potwierdzonej dostępności komercyjnej. Według relacji medialnych na części pokazów występował człowiek w pętli (teleoperacja).",
+        "environment_type": [
+            "controlled_space"
+        ],
+        "target_user": [
+            "enthusiast"
+        ],
+        "notes": "<p>Tesla opisuje cel: „general purpose, bi-pedal, autonomous humanoid robot” do zadań niebezpiecznych, powtarzalnych lub nudnych. Publiczne materiały nie stanowią pełnej specyfikacji produktu dostępnego na rynku.</p>"
+    },
+    "capabilities": [
+        {
+            "title": "Deklarowany cel: wykonywanie zadań niebezpiecznych, powtarzalnych lub nudnych",
+            "category": "autonomy",
+            "summary": "Tesla komunikuje, że celem projektu Optimus jest ogólnego przeznaczenia robot humanoidalny do zadań niebezpiecznych, powtarzalnych lub nudnych.",
+            "conditions": "To deklaracja celu projektu; nie jest to lista gwarantowanych umiejętności w produkcie rynkowym.",
+            "risk_level": "medium",
+            "claims": {
+                "connect_by_slug": [
+                    "claim-optimus-goal-tasks-tesla"
+                ]
+            },
+            "notes_internal": "Utrzymywać język jako „cel/deklaracja” bez obietnic konkretnego zakresu prac."
+        },
+        {
+            "title": "Lokomocja: deklarowany cel prędkości marszu ok. 5 mph",
+            "category": "locomotion",
+            "summary": "W relacjach z AI Day pojawia się deklaracja celu prędkości marszu ~5 mph (ok. 2,24 m/s).",
+            "conditions": "Brak publicznej metodologii; wartość należy traktować jako cel/założenie z wczesnych komunikatów.",
+            "risk_level": "medium",
+            "claims": {
+                "connect_by_slug": [
+                    "claim-optimus-walk-speed-5mph"
+                ]
+            },
+            "notes_internal": "Nie przedstawiać jako ‘zmierzona’ prędkość w domu/na hali."
+        },
+        {
+            "title": "Manipulacja: deklarowany udźwig przenoszenia 20 kg i „deadlift” 68 kg",
+            "category": "manipulation",
+            "summary": "W publicznych relacjach pojawia się informacja o przenoszeniu ok. 20 kg oraz „deadlift” ok. 68 kg.",
+            "conditions": "Brak publicznej metodologii (pozycja robota, dynamika, czas utrzymania).",
+            "risk_level": "high",
+            "claims": {
+                "connect_by_slug": [
+                    "claim-optimus-carry-20kg",
+                    "claim-optimus-deadlift-68kg"
+                ]
+            },
+            "notes_internal": "Ryzyko nadinterpretacji — ‘deadlift’ nie oznacza bezpiecznej manipulacji ciężkimi obiektami w realnym środowisku."
+        },
+        {
+            "title": "Autonomia w praktyce: możliwy człowiek w pętli na pokazach",
+            "category": "autonomy",
+            "summary": "Według relacji medialnych część publicznych prezentacji Optimusa nie była w pełni autonomiczna i wykorzystywała zdalnych operatorów.",
+            "conditions": "Dotyczy konkretnych pokazów i okresów rozwoju; nie przesądza o docelowej architekturze.",
+            "risk_level": "high",
+            "claims": {
+                "connect_by_slug": [
+                    "claim-optimus-teleop-at-events"
+                ]
+            },
+            "notes_internal": "To kluczowa informacja do sekcji ‘ograniczenia’ i do tonowania oczekiwań."
+        }
+    ],
+    "limitations": [
+        {
+            "title": "Brak komercyjnej dostępności i brak finalnej specyfikacji produktu",
+            "limitation_type": "unstable",
+            "description": "Optimus nie ma publicznie dostępnej, stabilnej karty katalogowej produktu oraz nie jest oferowany komercyjnie dla konsumentów.",
+            "why_it_matters": "Trudno porównywać z produktami rynkowymi; część parametrów to cele/założenia z wczesnych komunikatów."
+        },
+        {
+            "title": "Autonomia nie jest jednoznacznie potwierdzona jako ‘bez nadzoru’",
+            "limitation_type": "not_fully_autonomous_for_all_tasks",
+            "description": "Według relacji medialnych część pokazów wykorzystywała zdalnych operatorów (teleop), więc nie można traktować demonstracji jako dowodu pełnej autonomii w realnym świecie.",
+            "why_it_matters": "To wpływa na realne oczekiwania co do wdrożeń i bezpieczeństwa w przestrzeni współdzielonej z ludźmi."
+        },
+        {
+            "title": "Wysoka wrażliwość na środowisko (typowa dla humanoidów)",
+            "limitation_type": "environment_sensitive",
+            "description": "Roboty dwunożne są zwykle wrażliwe na śliskie podłoże, przeszkody, luźne elementy (kable, dywaniki) i zatłoczone przejścia; Tesla nie publikuje tu granicznych parametrów środowiskowych.",
+            "why_it_matters": "Bez jawnych limitów trudno ocenić niezawodność poza kontrolowanym środowiskiem."
+        }
+    ],
+    "autonomy_and_control": {
+        "control_modes": [
+            "teleop",
+            "semi_autonomous",
+            "autonomous"
+        ],
+        "cloud_dependency": "unknown",
+        "internet_required": "sometimes",
+        "operator_required": "sometimes",
+        "notes": "<p>Tesla deklaruje cel robota autonomicznego, ale relacje medialne wskazują, że na części pokazów wykorzystywano zdalnych operatorów. Z tego powodu zakładamy, że w praktyce mogą występować tryby teleop i praca z operatorem w pętli.</p>"
+    },
+    "safety": {
+        "emergency_stop": "unknown",
+        "collision_detection": "unknown",
+        "safe_near_children": "unknown",
+        "certifications": [],
+        "known_risks": [
+            "Ryzyko kolizji i upadków typowe dla humanoidów w przestrzeni współdzielonej z ludźmi.",
+            "Ryzyko nadinterpretacji demonstracji jako dowodu pełnej autonomii.",
+            "Ryzyko operacyjne przy teleoperacji (opóźnienia sieci, błędy operatora)."
+        ],
+        "notes": "<p>Tesla nie publikuje w jednym miejscu formalnych certyfikacji bezpieczeństwa dla produktu rynkowego Optimus ani jednoznacznych informacji o mechanizmach typu E-STOP / detekcja kolizji w wersji produkcyjnej.</p>"
+    },
+    "environment_requirements": {
+        "space_requirements": "Zakładaj środowisko jak dla człowieka: odpowiednia szerokość przejść, brak ciasnych zwężeń i wolna strefa manewrowa. Brak publicznych wymagań minimalnych od Tesli.",
+        "lighting_constraints": "Brak publicznych wymagań liczbowych; jeżeli percepcja opiera się na wizji, trudne będą: słabe światło, odblaski i szybkie zmiany oświetlenia.",
+        "floor_constraints": "Konserwatywnie: unikać śliskich i mokrych podłóg oraz luźnych dywaników/kabli; brak publicznych limitów od Tesli.",
+        "connectivity": "Brak publicznych wymagań. Jeśli występuje teleop/diagnostyka zdalna, Internet może być potrzebny przynajmniej czasami.",
+        "setup_requirements": "Brak publicznego procesu instalacji dla użytkownika końcowego; prawdopodobnie konfiguracja jest wewnętrzna (laboratorium/hala)."
+    },
+    "faq": [
+        {
+            "question": "Czy Tesla Optimus jest dostępny do kupienia?",
+            "answer_short": "Nie. Na dziś nie jest to produkt komercyjnie dostępny dla konsumentów.",
+            "answer_conditions": "Tesla publikuje informacje o projekcie i pokazach, ale bez oferty sprzedaży detalicznej i bez stabilnej specyfikacji produktu rynkowego.",
+            "answer_not_possible": null,
+            "confidence": "high",
+            "claims": {
+                "connect_by_slug": [
+                    "claim-optimus-not-commercially-available"
+                ]
+            }
+        },
+        {
+            "question": "Czy Optimus jest w pełni autonomiczny?",
+            "answer_short": "Nie ma jednoznacznego, publicznego potwierdzenia pełnej autonomii bez nadzoru we wszystkich scenariuszach; relacje medialne wskazują na użycie teleoperacji na części pokazów.",
+            "answer_conditions": "Docelowym celem Tesli jest autonomia, ale demonstracje mogą obejmować człowieka w pętli.",
+            "answer_not_possible": null,
+            "confidence": "medium",
+            "claims": {
+                "connect_by_slug": [
+                    "claim-optimus-teleop-at-events",
+                    "claim-optimus-goal-tasks-tesla"
+                ]
+            }
+        },
+        {
+            "question": "Jakie są publicznie podawane parametry (wzrost/masa/udźwig/prędkość/bateria)?",
+            "answer_short": "W relacjach z AI Day i wypowiedziach Tesli/Muska pojawiają się: wzrost ok. 173 cm, masa ok. 57 kg, przenoszenie ok. 20 kg, „deadlift” ok. 68 kg, cel prędkości marszu ~5 mph oraz bateria ok. 2,3 kWh.",
+            "answer_conditions": "To przede wszystkim deklaracje/cele z okresu pokazów; Tesla nie publikuje jednej, aktualnej tabeli specyfikacji produkcyjnej.",
+            "answer_not_possible": null,
+            "confidence": "medium",
+            "claims": {
+                "connect_by_slug": [
+                    "claim-optimus-height-173cm",
+                    "claim-optimus-weight-57kg",
+                    "claim-optimus-carry-20kg",
+                    "claim-optimus-deadlift-68kg",
+                    "claim-optimus-walk-speed-5mph",
+                    "claim-optimus-battery-2p3kwh"
+                ]
+            }
+        }
+    ],
+    "expert_summary": {
+        "who_is_it_for": "Dla obserwujących rozwój humanoidów i automatyzacji w przemyśle (monitorowanie technologii), a nie dla użytkowników szukających gotowego produktu do kupienia.",
+        "who_is_it_not_for": "Nie dla praktycznych użytkowników domowych ani firm oczekujących gotowej, certyfikowanej platformy dostępnej komercyjnie już teraz.",
+        "top_risks": [
+            "Brak komercyjnej dostępności i brak stabilnej karty katalogowej produktu.",
+            "Ryzyko mylenia demonstracji z autonomią bez nadzoru (teleop/człowiek w pętli).",
+            "Nieznane parametry bezpieczeństwa i certyfikacje wersji produkcyjnej."
+        ],
+        "recommendation_level": "watch_only",
+        "final_note": "W obecnym stanie Optimus jest projektem w fazie rozwoju i prezentacji, a nie produktem konsumenckim. Dane liczbowe należy traktować jako deklaracje/cele z komunikacji Tesli, dopóki nie pojawi się specyfikacja produkcyjna i niezależne testy."
+    },
+    "notes_internal": "<p>Ustawienia konserwatywne: market_status=limited_real_world (pokazy i prace rozwojowe), availability_status=not_available (brak sprzedaży). Klucz do aktualizacji: jeśli Tesla opublikuje stabilną kartę specyfikacji lub wejdą oficjalne wdrożenia komercyjne, wtedy podnosimy do pilot/available i aktualizujemy claimy.</p>"
+}

@@ -1,0 +1,233 @@
+{
+    "sources_to_create": [
+        {
+            "slug": "tesla-ai-robotics",
+            "title": "Tesla — AI & Robotics: opis celu projektu Tesla Optimus",
+            "publisher": "Tesla",
+            "url": "https://www.tesla.com/AI",
+            "type": "official_product_page"
+        },
+        {
+            "slug": "latimes-tesla-ai-day-2022-optimus",
+            "title": "Los Angeles Times — relacja z Tesla AI Day 2022 (wzrost/masa/udźwig jako deklaracje)",
+            "publisher": "Los Angeles Times",
+            "url": "https://www.latimes.com/business/story/2022-09-30/tesla-ai-day",
+            "type": "news"
+        },
+        {
+            "slug": "cleantechnica-optimus-specs-2022",
+            "title": "CleanTechnica — omówienie deklarowanych parametrów Tesli dla Optimusa (173 cm, 57 kg, 20 kg carry, 68 kg deadlift)",
+            "publisher": "CleanTechnica",
+            "url": "https://cleantechnica.com/2022/03/30/tesla-bot-optimus-its-impact-on-our-future/",
+            "type": "analysis"
+        },
+        {
+            "slug": "forbes-optimus-specs-battery-2022",
+            "title": "Forbes — podsumowanie informacji o Optimus (m.in. bateria 2,3 kWh i cele energetyczne)",
+            "publisher": "Forbes",
+            "url": "https://www.forbes.com/sites/johnkoetsier/2022/10/01/tesla-bot-optimus-everything-we-know-so-far/",
+            "type": "analysis"
+        },
+        {
+            "slug": "ieee-spectrum-robotics-experts-optimus",
+            "title": "IEEE Spectrum — komentarze ekspertów dot. Optimus (m.in. bateria 2,3 kWh i krytyka deklaracji „full day’s work”)",
+            "publisher": "IEEE Spectrum",
+            "url": "https://spectrum.ieee.org/robotics-experts-tesla-bot-optimus/gary-marcus",
+            "type": "analysis"
+        },
+        {
+            "slug": "businessinsider-optimus-teleop-2025",
+            "title": "Business Insider — relacja o Optimus (w tym informacja, że na pokazie w 2024 roboty nie były w pełni autonomiczne i polegały na zdalnych operatorów)",
+            "publisher": "Business Insider",
+            "url": "https://www.businessinsider.com/optimus-tesla-humanoid-robot-elon-musk-growth-plans-2025-9",
+            "type": "news"
+        }
+    ],
+    "claims_to_create": [
+        {
+            "title": "Cel projektu: robot do zadań niebezpiecznych, powtarzalnych lub nudnych",
+            "claim_text": "Tesla deklaruje, że celem projektu Optimus jest ogólnego przeznaczenia, dwunożny robot humanoidalny zdolny do wykonywania zadań niebezpiecznych, powtarzalnych lub nudnych.",
+            "category": "autonomy",
+            "status": "verified",
+            "conditions": "To deklaracja celu projektu (nie lista gwarantowanych funkcji produktu rynkowego).",
+            "not_in_scope": "Nie przesądza, jakie konkretne zadania i z jaką skutecznością robot wykona dziś lub w wersji produkcyjnej.",
+            "risk_notes": "Ryzyko nadinterpretacji jako obietnicy konkretnego zestawu umiejętności.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "tesla-ai-robotics"
+                ]
+            },
+            "slug_internal": "claim-optimus-goal-tasks-tesla"
+        },
+        {
+            "title": "Wzrost ok. 173 cm (deklaracja z komunikacji Tesli/AIDay)",
+            "claim_text": "W relacjach z AI Day i w komunikacji o Optimus pojawia się wartość wzrostu ok. 173 cm (5'8\").",
+            "category": "other",
+            "status": "verified",
+            "conditions": "Traktować jako wartość deklarowaną w kontekście pokazu/założeń; brak stabilnej karty katalogowej produktu.",
+            "not_in_scope": "Nie jest to potwierdzona specyfikacja wersji produkcyjnej.",
+            "risk_notes": "Wartości mogą się zmieniać między generacjami prototypów.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "latimes-tesla-ai-day-2022-optimus",
+                    "cleantechnica-optimus-specs-2022"
+                ]
+            },
+            "slug_internal": "claim-optimus-height-173cm"
+        },
+        {
+            "title": "Masa ok. 57 kg (deklaracja z komunikacji Tesli/AIDay)",
+            "claim_text": "W relacjach z AI Day i w komunikacji o Optimus pojawia się masa ok. 57 kg (125 lb).",
+            "category": "other",
+            "status": "verified",
+            "conditions": "Wartość deklarowana; brak publicznej, aktualnej tabeli specyfikacji produkcyjnej.",
+            "not_in_scope": "Nie przesądza o masie docelowej wersji produkcyjnej.",
+            "risk_notes": "Masa zależy od generacji prototypu i osprzętu.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "latimes-tesla-ai-day-2022-optimus",
+                    "cleantechnica-optimus-specs-2022"
+                ]
+            },
+            "slug_internal": "claim-optimus-weight-57kg"
+        },
+        {
+            "title": "Przenoszenie (carry) ok. 20 kg",
+            "claim_text": "W relacjach z AI Day i w omówieniach deklaracji Tesli pojawia się przenoszenie (carry) ok. 20 kg (45 lb).",
+            "category": "manipulation",
+            "status": "verified",
+            "conditions": "Brak metodologii: zasięg, prędkość ruchu, stabilność, czas przenoszenia.",
+            "not_in_scope": "Nie oznacza bezpiecznego przenoszenia dowolnych obiektów o tej masie w realnym środowisku.",
+            "risk_notes": "Ryzyko nadmiernych oczekiwań i niebezpiecznego użycia.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "latimes-tesla-ai-day-2022-optimus",
+                    "cleantechnica-optimus-specs-2022"
+                ]
+            },
+            "slug_internal": "claim-optimus-carry-20kg"
+        },
+        {
+            "title": "„Deadlift” ok. 68 kg",
+            "claim_text": "W relacjach z AI Day i w omówieniach deklaracji Tesli pojawia się „deadlift” ok. 68 kg (150 lb).",
+            "category": "manipulation",
+            "status": "verified",
+            "conditions": "Brak metodologii: punkt zaczepu, pozycja robota, czas utrzymania, dynamika, margines bezpieczeństwa.",
+            "not_in_scope": "Nie oznacza, że robot bezpiecznie podniesie ciężkie, nieporęczne obiekty w ciasnych warunkach.",
+            "risk_notes": "Bardzo łatwo o mylne wnioski dot. realnej użyteczności i bezpieczeństwa.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "cleantechnica-optimus-specs-2022"
+                ]
+            },
+            "slug_internal": "claim-optimus-deadlift-68kg"
+        },
+        {
+            "title": "Cel prędkości marszu ok. 5 mph (ok. 2,24 m/s)",
+            "claim_text": "W relacjach z AI Day pojawia się cel prędkości marszu ok. 5 mph (ok. 2,24 m/s).",
+            "category": "locomotion",
+            "status": "verified",
+            "conditions": "Wartość deklarowana; brak warunków pomiaru (nawierzchnia, obciążenie, tryb, stabilność).",
+            "not_in_scope": "Nie oznacza bezpiecznej prędkości poruszania się w typowym domu lub zatłoczonej hali.",
+            "risk_notes": "Ryzyko błędnych porównań i oczekiwań. W praktyce prędkość może być ograniczana przez bezpieczeństwo.",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "forbes-optimus-specs-battery-2022",
+                    "cleantechnica-optimus-specs-2022"
+                ]
+            },
+            "slug_internal": "claim-optimus-walk-speed-5mph"
+        },
+        {
+            "title": "Bateria ok. 2,3 kWh (deklaracja z okresu AI Day)",
+            "claim_text": "W publicznych omówieniach informacji Tesli o Optimus pojawia się pojemność baterii ok. 2,3 kWh (w kontekście AI Day / wczesnych założeń).",
+            "category": "power",
+            "status": "verified",
+            "conditions": "Wartość dotyczy okresu wczesnych prototypów/założeń; brak stabilnej specyfikacji produkcyjnej.",
+            "not_in_scope": "Nie przesądza o czasie pracy w realnych zadaniach ani o parametrach baterii w kolejnych generacjach.",
+            "risk_notes": "IEEE Spectrum przytacza krytyczne opinie, że deklaracja „pełnego dnia pracy” przy tej pojemności może być zbyt optymistyczna (zależne od obciążenia).",
+            "maturity": "prototype",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "forbes-optimus-specs-battery-2022",
+                    "ieee-spectrum-robotics-experts-optimus"
+                ]
+            },
+            "slug_internal": "claim-optimus-battery-2p3kwh"
+        },
+        {
+            "title": "Na części pokazów: brak pełnej autonomii, możliwa teleoperacja",
+            "claim_text": "Według relacji medialnych na części pokazów Optimusa roboty nie były w pełni autonomiczne i korzystały ze zdalnych operatorów.",
+            "category": "autonomy",
+            "status": "verified",
+            "conditions": "Dotyczy konkretnych pokazów i okresów rozwoju; nie jest to dowód, że projekt nie dąży do autonomii.",
+            "not_in_scope": "Nie przesądza, jaki jest obecny poziom autonomii w laboratorium ani jak wygląda wewnętrzna wersja Tesli w zakładach.",
+            "risk_notes": "To istotne dla oczekiwań: demonstracje nie są równoznaczne z wdrożeniem autonomii bez nadzoru.",
+            "maturity": "limited_real_world",
+            "confidence": "medium",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "businessinsider-optimus-teleop-2025"
+                ]
+            },
+            "slug_internal": "claim-optimus-teleop-at-events"
+        },
+        {
+            "title": "Brak sprzedaży komercyjnej dla konsumentów (stan na dziś)",
+            "claim_text": "Tesla nie oferuje Optimusa jako produktu do kupienia dla konsumentów (brak publicznej oferty sprzedaży detalicznej).",
+            "category": "other",
+            "status": "verified",
+            "conditions": "Dotyczy stanu obecnego: Tesla publikuje stronę projektu i materiały rekrutacyjne, ale bez sprzedaży detalicznej robota.",
+            "not_in_scope": "Nie przesądza o przyszłych planach cenowych ani o ewentualnych wdrożeniach B2B.",
+            "risk_notes": "Ryzyko mylenia projektu R&D z produktem rynkowym.",
+            "maturity": "prototype",
+            "confidence": "high",
+            "robot": {
+                "connect_by_slug": "tesla-optimus"
+            },
+            "evidence": {
+                "connect_by_slug": [
+                    "tesla-ai-robotics"
+                ]
+            },
+            "slug_internal": "claim-optimus-not-commercially-available"
+        }
+    ]
+}
