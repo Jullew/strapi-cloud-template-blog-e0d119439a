@@ -171,6 +171,14 @@
                 }
             }
         },
+        "manufacturer_link": {
+            "type": "string",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
         "sources": {
             "type": "relation",
             "relation": "manyToMany",

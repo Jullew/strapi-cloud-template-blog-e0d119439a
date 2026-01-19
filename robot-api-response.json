@@ -1,0 +1,320 @@
+{
+  "data": [
+    {
+      "id": 5,
+      "documentId": "ofn9jhj5qq62b6qtpf14pkvs",
+      "name": "1X NEO",
+      "slug": "1x-neo",
+      "short_neutral_summary": "1X NEO to domowy humanoid (dwunożny) oferowany w modelu przedsprzedaży. Producent deklaruje wykonywanie części prac domowych (lista zadań i harmonogram oraz zadania „na żądanie”) oraz możliwość zdalnego wsparcia przez Scheduled Expert Mode w przypadku zadań nieznanych. Producent komunikuje start dostaw w USA w 2026 roku.",
+      "market_status": "beta",
+      "availability_status": "preorder",
+      "review_status": "needs_review",
+      "blocked_reason": null,
+      "last_technical_review_at": null,
+      "media_disclaimer": "mixed",
+      "createdAt": "2026-01-18T09:03:10.281Z",
+      "updatedAt": "2026-01-18T09:03:21.268Z",
+      "publishedAt": "2026-01-18T09:03:22.362Z",
+      "locale": "pl",
+      "manufacturer": {
+        "id": 2,
+        "documentId": "ds8ispdpft3hju6vjx4tljwc",
+        "name": "1X Technologies",
+        "slug": "1x-technologies",
+        "country": "USA",
+        "createdAt": "2026-01-13T12:04:36.611Z",
+        "updatedAt": "2026-01-13T12:04:36.611Z",
+        "publishedAt": "2026-01-13T12:04:36.545Z",
+        "website_url": "https://www.1x.tech/"
+      },
+      "regions": [
+        {
+          "id": 1,
+          "documentId": "pgcbvvoej2n6o8typ95gh6ns",
+          "name": "US",
+          "code": "us",
+          "createdAt": "2026-01-14T11:36:44.816Z",
+          "updatedAt": "2026-01-14T11:36:44.816Z",
+          "publishedAt": "2026-01-14T11:36:44.768Z"
+        }
+      ],
+      "sources": [
+        {
+          "id": 3,
+          "documentId": "aojsi02hob1gnbz526bv4625",
+          "title": "1x-order-neo",
+          "type": "official_doc",
+          "publisher": null,
+          "url": "https://placeholder.com/1x-order-neo",
+          "publication_date": null,
+          "retrieved_at": null,
+          "access": "public",
+          "is_official": false,
+          "evidence_quality": "D_marketing_claim",
+          "quote_or_timestamp": null,
+          "notes": null,
+          "createdAt": "2026-01-14T17:51:39.986Z",
+          "updatedAt": "2026-01-14T17:51:39.986Z",
+          "publishedAt": "2026-01-14T17:51:39.981Z"
+        },
+        {
+          "id": 4,
+          "documentId": "qe9bigna5me4dix811ugssmh",
+          "title": "1x-neo-home-robot-order-today",
+          "type": "official_doc",
+          "publisher": null,
+          "url": "https://placeholder.com/1x-neo-home-robot-order-today",
+          "publication_date": null,
+          "retrieved_at": null,
+          "access": "public",
+          "is_official": false,
+          "evidence_quality": "D_marketing_claim",
+          "quote_or_timestamp": null,
+          "notes": null,
+          "createdAt": "2026-01-14T17:51:40.385Z",
+          "updatedAt": "2026-01-14T17:51:40.385Z",
+          "publishedAt": "2026-01-14T17:51:40.376Z"
+        },
+        {
+          "id": 5,
+          "documentId": "pbvd5e5rhd0thbjc1jl05rf4",
+          "title": "1x-neo-main-page",
+          "type": "official_doc",
+          "publisher": null,
+          "url": "https://placeholder.com/1x-neo-main-page",
+          "publication_date": null,
+          "retrieved_at": null,
+          "access": "public",
+          "is_official": false,
+          "evidence_quality": "D_marketing_claim",
+          "quote_or_timestamp": null,
+          "notes": null,
+          "createdAt": "2026-01-14T17:51:40.770Z",
+          "updatedAt": "2026-01-14T17:51:40.770Z",
+          "publishedAt": "2026-01-14T17:51:40.768Z"
+        }
+      ],
+      "claims": [],
+      "classification": {
+        "id": 19,
+        "locomotion_type": "biped_walking",
+        "manipulation_level": "two_hands_dexterous",
+        "autonomy_level": "home_autonomy_with_human_assist",
+        "cloud_dependency": "partial",
+        "sdk_api": "unknown",
+        "form_factor": "humanoid_biped",
+        "primary_domain": "home"
+      },
+      "specs_public": {
+        "id": 18,
+        "height_cm": 167.64,
+        "weight_kg": 29.94,
+        "payload_kg": null,
+        "runtime_min": 240,
+        "charging_time_min": null,
+        "sensors_public": {
+          "imus": "Linkwise differential (prędkość i przyspieszenia)",
+          "notes": [
+            "Brak publicznie potwierdzonej listy dodatkowych sensorów (np. LiDAR) poza tym, co opisuje producent."
+          ],
+          "camera": "Podwójna kamera Dual 8.85MP 90Hz Stereo Fisheye",
+          "microphones": "4 mikrofony kierunkowe (beamforming)"
+        },
+        "power": "Zasilanie bateryjne (842 Wh)",
+        "sdk_api": "unknown",
+        "data_completeness": "high",
+        "notes": "<p>Producent publikuje szczegółową specyfikację m.in. dla: prędkości (chodzenie/bieg/dłonie), baterii (842 Wh, 4h, szybkie ładowanie 6 min / 1h pracy), stopnia ochrony IP (korpus IP44, dłonie IP68), oraz ogólne cechy bezpieczeństwa (miękkie poszycie, brak punktów szczypania, HIC &lt; 250). Brak danych o czasie pełnego ładowania oraz o formalnych certyfikacjach bezpieczeństwa.</p>",
+        "lift_kg": 69.85,
+        "carry_kg": 24.95,
+        "arm_payload_kg": 8.16,
+        "battery_wh": 842,
+        "runtime_hours": 4,
+        "noise_db": 22,
+        "ip_body": "IP44 (odporność na zachlapanie)",
+        "ip_hands": "IP68 (dłonie – możliwość zanurzenia)",
+        "compute_chipset": "1X NEO Cortex (Nvidia Jetson Thor)",
+        "compute_ai_tflops_fp4": 2070,
+        "camera": "Dual 8.85MP 90Hz Stereo Fisheye",
+        "microphones": "4 beamforming microphones",
+        "speakers": "Głośniki 3-stopniowe w obrębie miednicy i klatki piersiowej",
+        "comms": {
+          "wifi": true,
+          "bluetooth": true,
+          "cellular_5g": true
+        },
+        "dof": {
+          "neck_dof": 3,
+          "spine_dof": 2,
+          "arms_dof_total": 14,
+          "legs_dof_total": 12,
+          "hands_dof_total": 44,
+          "arms_dof_per_arm": 7,
+          "legs_dof_per_leg": 6,
+          "hands_dof_per_hand": 22
+        },
+        "speeds": {
+          "notes": [
+            "„Hands 8.0 m/s” podane bez publicznej definicji metryki (np. czy dotyczy końcówki palców, nadgarstka, jakiego ruchu i z jakim obciążeniem)."
+          ],
+          "hands_speed_m_s": 8,
+          "max_run_speed_m_s": 6.2,
+          "walking_speed_m_s": 1.4
+        }
+      },
+      "intended_use": {
+        "id": 5,
+        "declared_applications": [
+          {
+            "name": "Prace domowe: lista zadań i harmonogram",
+            "examples": [
+              "składanie prania",
+              "porządkowanie półek",
+              "ogarnianie/porządkowanie przestrzeni"
+            ]
+          },
+          {
+            "name": "Zadania wykonywane na żądanie (głos / aplikacja)",
+            "examples": [
+              "bieżące zadania w pobliżu",
+              "interakcja głosowa i konwersacyjna"
+            ]
+          },
+          {
+            "name": "Zadania nieznane z pomocą człowieka (Scheduled Expert Mode)",
+            "examples": [
+              "zadania nieznane nadzorowane zdalnie przez eksperta"
+            ]
+          }
+        ],
+        "notes": "<p>1X opisuje funkcję „Chores” (lista zadań, harmonogram i zadania bieżące) oraz możliwość zaplanowania wsparcia eksperta 1X dla zadań nieznanych.</p>",
+        "high_level_summary": "Domowy humanoid do automatyzacji prostych i powtarzalnych czynności w domu, z opcją zdalnego wsparcia eksperta 1X w przypadku zadań nieznanych.",
+        "key_constraints": "Zakres autonomii jest ograniczony: producent przewiduje Scheduled Expert Mode dla zadań, których robot „nie zna”, co oznacza, że w części scenariuszy może wystąpić zależność od usługi i łączności."
+      },
+      "capabilities": [
+        {
+          "id": 7,
+          "title": "„Chores”: lista zadań, harmonogram i zadania na żądanie",
+          "category": "autonomy",
+          "summary": "Producent opisuje funkcję „Chores”: użytkownik podaje listę prac domowych i ustala harmonogram, a robot ma je realizować; przewidziane są też zadania wykonywane na żądanie.",
+          "conditions": "Zakres działań zależy od tego, czy robot „zna” dane zadanie; dla zadań nieznanych producent przewiduje Scheduled Expert Mode.",
+          "risk_level": "medium"
+        },
+        {
+          "id": 8,
+          "title": "Scheduled Expert Mode (człowiek w pętli)",
+          "category": "autonomy",
+          "summary": "W przypadku zadań nieznanych ekspert 1X może zdalnie nadzorować działania robota w zaplanowanych godzinach.",
+          "conditions": "Wymaga łączności; zasady dostępu i zakres prywatności zależą od polityk 1X (brak publicznej specyfikacji technicznej tych zasad).",
+          "risk_level": "high"
+        },
+        {
+          "id": 9,
+          "title": "Zdalne sterowanie (aplikacja mobilna + VR)",
+          "category": "interaction",
+          "summary": "Producent deklaruje możliwość pilotowania robota zdalnie przez aplikację mobilną oraz urządzenie VR.",
+          "conditions": "Wrażliwe na opóźnienia i jakość połączenia; w praktyce wymaga Internetu.",
+          "risk_level": "medium"
+        },
+        {
+          "id": 10,
+          "title": "Self-Charge (samodzielne podłączanie do ładowania)",
+          "category": "autonomy",
+          "summary": "Producent deklaruje, że robot sam zarządza baterią i podłącza się do zasilania, gdy potrzebuje energii.",
+          "conditions": "Wymaga przygotowanego miejsca przy ładowarce/gniazdku i drożnej trasy; brak publicznych danych o skuteczności w różnych układach mieszkań.",
+          "risk_level": "medium"
+        },
+        {
+          "id": 11,
+          "title": "Manipulacja dwuręczna (22 DoF na dłoń) i parametry przenoszenia",
+          "category": "manipulation",
+          "summary": "Producent podaje 22 DoF na dłoń (44 łącznie) oraz parametry lift/carry/arm payload.",
+          "conditions": "Brak publicznych danych o sile chwytu i klasach obiektów; parametry lift/carry to deklaracje producenta bez opisanej metodologii testu.",
+          "risk_level": "medium"
+        }
+      ],
+      "limitations": [],
+      "autonomy_and_control": {
+        "id": 3,
+        "control_modes": [
+          "autonomous",
+          "voice",
+          "app",
+          "scheduled_tasks",
+          "teleop",
+          "expert_guided"
+        ],
+        "cloud_dependency": "partial",
+        "internet_required": "sometimes",
+        "operator_required": "sometimes",
+        "notes": "<p>1X opisuje autonomię „domyślną” oraz tryby: Voice Interface, Mobile Interface, Self-Charge, Remote Control i Scheduled Expert Mode (zdalny ekspert w zaplanowanych godzinach).</p>"
+      },
+      "safety": {
+        "id": 3,
+        "emergency_stop": "unknown",
+        "collision_detection": "unknown",
+        "safe_near_children": "unknown",
+        "certifications": [],
+        "known_risks": [
+          "Humanoid w domu: ryzyko uderzeń/upadków mimo „miękkiego poszycia” (szczególnie w pobliżu ludzi).",
+          "Scheduled Expert Mode / zdalne sterowanie: ryzyko prywatności i błędów operacyjnych (człowiek w pętli).",
+          "IP44 dotyczy korpusu (zachlapanie), IP68 dotyczy dłoni — nie oznacza pełnej wodoodporności całego robota."
+        ],
+        "notes": "<p>1X deklaruje m.in.: miękkie poszycie (custom lattice polymer), brak punktów szczypania (pinch proof), HIC &lt; 250, low inertia tendon drives oraz IP68 dla dłoni i IP44 dla korpusu. Brak jawnych danych o mechanizmach E-STOP i wykrywaniu kolizji.</p>"
+      },
+      "environment_requirements": {
+        "id": 3,
+        "space_requirements": "Brak publicznie podanych wymagań dot. minimalnych przejść i średnicy zawracania. Konserwatywnie: zapewnij przestrzeń jak dla dorosłego człowieka oraz wolny dostęp do strefy ładowania.",
+        "lighting_constraints": "Brak liczbowych wymagań. Ponieważ percepcja opiera się na kamerach (stereo fisheye), ograniczenia zwykle rosną w słabym świetle i przy silnych refleksach.",
+        "floor_constraints": "Brak publicznych ograniczeń. Typowo problematyczne dla robotów dwunożnych: mokre/śliskie podłogi, luźne dywaniki i bałagan w przejściach.",
+        "connectivity": "1X deklaruje Wi-Fi, Bluetooth i 5G; tryby zdalne oraz tryb eksperta oznaczają, że Internet będzie potrzebny przynajmniej czasami.",
+        "setup_requirements": "Konfiguracja aplikacji NEO i łączności; przygotowanie miejsca ładowania (Self-Charge)."
+      },
+      "faq": [
+        {
+          "id": 4,
+          "question": "Czy NEO jest w pełni autonomiczny?",
+          "answer_short": "Nie w każdym zadaniu. Producent przewiduje Scheduled Expert Mode dla zadań, których robot nie zna.",
+          "answer_conditions": "Zakres autonomii może się zmieniać wraz z aktualizacjami; w przypadku „zadań nieznanych” producent wskazuje udział eksperta 1X.",
+          "answer_not_possible": null,
+          "confidence": "high"
+        },
+        {
+          "id": 5,
+          "question": "Kiedy ruszają dostawy?",
+          "answer_short": "Producent podaje start dostaw w USA w 2026 roku.",
+          "answer_conditions": "Szczegółowe terminy mogą zależeć od regionu i kolejki zamówień.",
+          "answer_not_possible": null,
+          "confidence": "high"
+        },
+        {
+          "id": 6,
+          "question": "Jak szybki jest NEO?",
+          "answer_short": "Producent podaje: prędkość chodu 1,4 m/s, maks. prędkość biegu 6,2 m/s oraz „hands 8,0 m/s”.",
+          "answer_conditions": "„Hands 8,0 m/s” jest podane bez definicji metryki i metodologii.",
+          "answer_not_possible": null,
+          "confidence": "high"
+        }
+      ],
+      "expert_summary": {
+        "id": 3,
+        "who_is_it_for": "Dla wczesnych użytkowników (early adopterów), którzy akceptują wczesny etap produktu oraz okazjonalny „człowiek w pętli” (Scheduled Expert Mode) i chcą automatyzować proste czynności domowe.",
+        "who_is_it_not_for": "Nie dla osób oczekujących pełnej autonomii we wszystkich zadaniach, jednoznacznych certyfikacji bezpieczeństwa już teraz, albo pracy w trudnych warunkach środowiskowych (mokro/ślisko/outdoor).",
+        "top_risks": [
+          "Rzeczywista skuteczność w nieuporządkowanym domu (brak publicznie dostępnych, niezależnych testów długoterminowych).",
+          "Zależność od usług zdalnych i ryzyko prywatności (Scheduled Expert Mode / zdalne sterowanie).",
+          "Brak publicznych danych o mechanizmach awaryjnego stopu, wykrywaniu kolizji i certyfikacjach."
+        ],
+        "recommendation_level": "early_adopter",
+        "final_note": "1X publikuje nietypowo szczegółową specyfikację sprzętową, ale kluczowe kwestie konsumenckie wymagają dodatkowej weryfikacji: niezawodność realizacji zadań w realnym domu oraz formalne mechanizmy i certyfikacje bezpieczeństwa."
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}
