@@ -61,7 +61,7 @@
             }
         },
         "definition": {
-            "type": "richtext",
+            "type": "blocks",
             "pluginOptions": {
                 "i18n": {
                     "localized": true
