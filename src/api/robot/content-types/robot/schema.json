@@ -321,6 +321,17 @@
                 }
             }
         },
+        "dictionary_terms": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::dictionary-term.dictionary-term",
+            "mappedBy": "related_robots",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
         "notes_internal": {
             "type": "richtext",
             "private": true,
