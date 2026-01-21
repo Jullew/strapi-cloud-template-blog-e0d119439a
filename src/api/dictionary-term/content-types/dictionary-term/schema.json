@@ -60,6 +60,14 @@
                 }
             }
         },
+        "summary_for_ai": {
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
         "definition": {
             "type": "blocks",
             "pluginOptions": {
