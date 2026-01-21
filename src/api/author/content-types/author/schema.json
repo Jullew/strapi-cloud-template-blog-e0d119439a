@@ -19,10 +19,20 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "email": {
       "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
     },
     "articles": {
       "type": "relation",
