@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_shared_key_takeaways",
+    "info": {
+        "displayName": "Key Takeaway",
+        "icon": "lightbulb",
+        "description": "Key point for the summary box"
+    },
+    "options": {},
+    "attributes": {
+        "text": {
+            "type": "string",
+            "required": true,
+            "maxLength": 200
+        }
+    }
+}

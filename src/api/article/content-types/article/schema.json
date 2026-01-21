@@ -51,8 +51,15 @@
         "shared.media",
         "shared.quote",
         "shared.rich-text",
-        "shared.slider"
+        "shared.slider",
+        "shared.faq",
+        "shared.lead-magnet"
       ]
+    },
+    "key_takeaways": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.key-takeaway"
     },
     "summary_for_ai": {
       "type": "text"

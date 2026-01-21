@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_shared_lead_magnets",
+    "info": {
+        "displayName": "Lead Magnet",
+        "icon": "magnet",
+        "description": "Conversion block overlay"
+    },
+    "options": {},
+    "attributes": {
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "waitlist",
+                "consultation",
+                "newsletter"
+            ],
+            "default": "waitlist",
+            "required": true
+        },
+        "heading": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        }
+    }
+}
